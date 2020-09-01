@@ -1,0 +1,42 @@
+c:\users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\bin\Debug\modbusRTU.exe.config
+C:\Users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\bin\Debug\modbusRTU.exe
+C:\Users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\bin\Debug\modbusRTU.pdb
+C:\Users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\bin\Debug\EasyModbus.dll
+C:\Users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\obj\Debug\modbusRTU.exe
+C:\Users\nicaar\documents\visual studio 2015\Projects\modbusRTU\modbusRTU\obj\Debug\modbusRTU.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.exe.config
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.exe
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\EasyModbus.dll
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csprojAssemblyReference.cache
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CoreCompileInputs.cache
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CopyComplete
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.exe
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.dll
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.xml
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\dlit\Downloads\2020.07\modbusRTU-master\modbusRTU-master\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.exe.config
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.exe
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\modbusRTU.pdb
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\EasyModbus.dll
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.dll
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.pdb
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.xml
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csprojAssemblyReference.cache
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CoreCompileInputs.cache
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CopyComplete
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.exe
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.pdb
