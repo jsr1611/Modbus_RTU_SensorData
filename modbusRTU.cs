@@ -13,6 +13,7 @@ namespace modbusRTU
     {
         static void Main(string[] args)
         {
+            
             ModbusClient modbusClient = new ModbusClient("COM3");
             modbusClient.Baudrate = 115200;	// Not necessary since default baudrate = 9600
             modbusClient.Parity = System.IO.Ports.Parity.None;
@@ -24,18 +25,17 @@ namespace modbusRTU
             String[] sensordata = {"ID", "Temp", "Humidity", "Part03", "Part05", "DateTime"};
             Console.WriteLine("Count\t" + string.Join("\t", sensordata));
 
-            SqlConnection myConnection = new SqlConnection(@"Data Source=DESKTOP-JQMGA3H;Initial Catalog=MyDatabase01;Integrated Security=True");
+            SqlConnection myConnection = new SqlConnection(@"Data Source=DESKTOP-JIMMY;Initial Catalog=SensorDataDB;Integrated Security=True");
             myConnection.Open();
             
             int i = 0;
-            while (i < 1000000) {
+            while (i < 10000000) {
                 try {
                     i += 1;
-
                     for(byte j=1; j<4; j++){
                     modbusClient.UnitIdentifier = j;
-                        DateTime now = DateTime.Now;
-                        string timestamp0 = now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string timestamp0 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        //string timestamp0 = now.ToString("yyyy-MM-dd HH:mm:ss.fff"); // 
                         int[] test1 = modbusClient.ReadInputRegisters(10, 6);
                         float temp = test1[0];
                         float humid = test1[1];
@@ -49,16 +49,33 @@ namespace modbusRTU
                         Int64 part03 = ModbusClient.ConvertRegistersToInt(part03_arr);
                         Int64 part05 = ModbusClient.ConvertRegistersToInt(part05_arr);
                         Console.WriteLine(i + "\t" + j + "\t" + (temp / 100).ToString() + "\t" + (humid / 100).ToString() + "\t\t" + String.Format("{0:n0}", part03) + "\t" + String.Format("{0:n0}", part05) + "\t" + timestamp0);
-                            
-                        SqlCommand myCommand = new SqlCommand("INSERT INTO SensorData (ID, Temperature, Humidity, Particle03, Particle05, DateAndTime) " + "Values (@ID, @Temperature, @Humidity, @Particle03, @Particle05, @DateAndTime)", myConnection);
-                        myCommand.Parameters.AddWithValue("@ID", j.ToString() );
-                        myCommand.Parameters.AddWithValue("@Temperature", (temp / 100).ToString());
-                        myCommand.Parameters.AddWithValue("@Humidity", (humid / 100).ToString());
-                        myCommand.Parameters.AddWithValue("@Particle03", String.Format("{0:n0}", part03));
-                        myCommand.Parameters.AddWithValue("@Particle05", String.Format("{0:n0}", part05));
-                        myCommand.Parameters.AddWithValue("@DateAndTime", timestamp0);
-                        myCommand.ExecuteNonQuery();
-                     }  
+                        
+                        string sql_str_temp = "INSERT INTO DEV_TEMP_" + j.ToString() + " (Temperature, DateAndTime) Values (@Temperature, @DateAndTime)";
+                        string sql_str_humid = "INSERT INTO DEV_HUMID_" + j.ToString() + " (Humidity, DateAndTime) Values (@Humidity, @DateAndTime)";
+                        string sql_str_part03 = "INSERT INTO DEV_PART03_" + j.ToString() + " (Particle03, DateAndTime) Values (@Particle03, @DateAndTime)";
+                        string sql_str_part05 = "INSERT INTO DEV_PART05_" + j.ToString() + " (Particle05, DateAndTime) Values (@Particle05, @DateAndTime)";
+
+                        SqlCommand myCommand_temp = new SqlCommand(sql_str_temp, myConnection);
+                        SqlCommand myCommand_humid = new SqlCommand(sql_str_humid, myConnection);
+                        SqlCommand myCommand_part03 = new SqlCommand(sql_str_part03, myConnection);
+                        SqlCommand myCommand_part05 = new SqlCommand(sql_str_part05, myConnection);
+
+                        myCommand_temp.Parameters.AddWithValue("@Temperature ", Math.Round((temp / 100),2).ToString());
+                        myCommand_temp.Parameters.AddWithValue("@DateAndTime", timestamp0);
+                        myCommand_temp.ExecuteNonQuery();
+
+                        myCommand_humid.Parameters.AddWithValue("@Humidity", Math.Round((humid / 100), 2));
+                        myCommand_humid.Parameters.AddWithValue("@DateAndTime", timestamp0);
+                        myCommand_humid.ExecuteNonQuery();
+
+                        myCommand_part03.Parameters.AddWithValue("@Particle03", part03);
+                        myCommand_part03.Parameters.AddWithValue("@DateAndTime", timestamp0);
+                        myCommand_part03.ExecuteNonQuery();
+
+                        myCommand_part05.Parameters.AddWithValue("@Particle05", part05);
+                        myCommand_part05.Parameters.AddWithValue("@DateAndTime", timestamp0);
+                        myCommand_part05.ExecuteNonQuery();
+                    }
                 }
                 catch (Exception e)
                 {
@@ -70,5 +87,21 @@ namespace modbusRTU
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
         }
+
+        /*        string DB_Selector(int S_ID, string tb_name, string column_name)
+                {
+                    if (S_ID == 1)
+                    {
+
+                    }
+                    else if (S_ID == 2)
+                    {
+                        string sql_str = "INSERT INTO " + DB_Name + " (S_ID, Temperature, Humidity, Particle03, Particle05, DateAndTime) " + "Values (@S_ID, @Temperature, @Humidity, @Particle03, @Particle05, @DateAndTime)";
+                    }
+                    else if (S_ID == 3)
+                    {
+
+                    }
+                }*/
     }
 }
