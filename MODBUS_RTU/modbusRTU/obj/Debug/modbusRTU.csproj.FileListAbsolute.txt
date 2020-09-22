@@ -35,8 +35,8 @@ C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\bin\Debug\LiveCharts.Wpf.xml
-C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csprojAssemblyReference.cache
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CoreCompileInputs.cache
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csproj.CopyComplete
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.exe
 C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.pdb
+C:\Users\JIMMY\source\repos\MODBUS_RTU\MODBUS_RTU\modbusRTU\obj\Debug\modbusRTU.csprojAssemblyReference.cache
